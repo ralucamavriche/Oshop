@@ -1,5 +1,5 @@
 # Oshop
-Oshop [DEMO](https://oshop-3d84c.web.app/shopping-cart).
+To view the application: [DEMO](https://oshop-3d84c.web.app/shopping-cart).
 
 Oshop is an e-commerce application built with Angular, Firebase and Bootstrap 4 that has implemented both the administrator part and the client part. 
 
@@ -9,6 +9,7 @@ The application contains:
     - Custom validation forms 
     - Search, sorting and paging
     - Authentication and authorization 
+    -
     And much more!
 
 
