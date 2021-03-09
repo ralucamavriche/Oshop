@@ -6,10 +6,10 @@ export class Order {
     items: any[];
 
 
-    constructor(public userId: string, public shopping: any, shoppingCart: ShoppingCart) {
-        this.datePlaced = new Date().getDate();
+    constructor(public userId: string, public shipping: any, shoppingCart: ShoppingCart) {
+        this.datePlaced = new Date().getTime();
 
-        this.items = shoppingCart.items.map(i => {
+        this.items = shoppingCart.items.map((i: any) => {
             return {
                 product: {
                     title: i.title,
