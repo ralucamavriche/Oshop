@@ -13,11 +13,7 @@ import { AuthGuard } from 'shared/services/auth-guard.service';
 
 @NgModule({
   imports: [
-    CommonModule,
-    //We use FormsModule because we have "ngForm"
-    FormsModule,
     SharedModule,
-    DataTableModule,
     RouterModule.forChild([
       { 
         path: 'admin/products/new', 

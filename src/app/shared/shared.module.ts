@@ -1,3 +1,6 @@
+import { DataTableModule } from 'angular-4-data-table';
+import { CustomFormsModule } from 'ng2-validation';
+import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
@@ -10,10 +13,19 @@ import { OrderService } from './services/order.service';
 import { ProductService } from './services/product.service';
 import { ShoppingCartService } from './services/shopping-cart.service';
 import { UserService } from './services/user.service';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    CustomFormsModule,
+    DataTableModule,
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
+    NgbModule.forRoot()
   ],
   declarations: [
     ProductCardComponent,
@@ -22,6 +34,13 @@ import { UserService } from './services/user.service';
   exports: [
     ProductCardComponent,
     ProductQuantityComponent,
+    CommonModule,
+    FormsModule,
+    CustomFormsModule,
+    DataTableModule,
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
+    NgbModule.forRoot().ngModule
   ],
   providers: [
     AuthService,
